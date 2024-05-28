@@ -1,0 +1,36 @@
+body {
+  background: url('img/background.jpg');
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+  }
+
+  #snake { 
+    border-color: #2f2915;
+    border-style:dotted;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .home-btn {
+    padding: 10px 15px;
+    background-color: #319231;
+    text-decoration: none;
+    display: block;
+    color: aliceblue;
+    border-radius: 5px;
+    border: none;
+    max-width: 100px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  .home-btn:hover {
+    opacity: 0.7;
+  }

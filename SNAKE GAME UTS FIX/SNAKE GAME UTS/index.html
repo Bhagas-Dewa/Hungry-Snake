@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Select Level</title>
+    <link rel="stylesheet" href="styleindex.css">
+  </head>
+
+  <body>
+    <div class="header">
+      <header>
+        <h1>HUNGRY SNAKE</h1>
+      </header>
+    </div>
+
+    <div class="select-level">
+      <form action="play.html" id="levels">
+        <h3>Pilih Level</h3>
+        <select name="" id="level">
+          <option id="option" value="easy">Mudah</option>
+          <option id="option" value="medium">Sedang</option>
+          <option id="option" value="hard">Sulit</option>
+        </select>
+        <input type="submit" value="Main!" id="submit" />
+      </form>
+    </div>
+
+    <footer>
+      <h2>Anindya Sita Paramastri / 22082010137 <br>
+          Mahadevi Katarina Sabila / 22082010139 <br>
+          Bhagas Satrya Dewa / 22082010164</h2>
+    </footer>
+
+    <script>
+      let levels = document.getElementById("levels");
+      let level = document.getElementById("level");
+      levels.addEventListener("submit", () => {
+        localStorage.setItem("snakeLevel", JSON.stringify(level.value));
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+* {
+  margin: 0%;
+}
+body {
+  background: url('img/background.jpg');
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header, footer {
+  color:white;
+  text-align: center;
+  padding: 10px;
+  border-radius : 20px;
+  margin-top : 10px;
+  margin-bottom : 10px;
+  margin-left : 30px;
+  margin-right : 30px;
+}
+h1 {
+  color: white;
+  padding: 30px;
+  background: #319231;
+  text-align: center;
+  border-radius: 8px;
+}
+h2 {
+  color: white;
+  padding: 30px;
+  background: #319231;
+  text-align: center;
+  border-radius: 8px;
+}
+h3 {
+  color: white;
+  padding: 15px;
+  background: rgb(24, 68, 25);
+  text-align: center;
+  border-radius: 8px;
+}
+form {
+  max-width: 600px;
+  margin: 2em auto;
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.select-level {
+  display: flex;
+  justify-content: center;
+}
+#levels {
+  width: 50%;
+  min-width: 200px;
+  max-width: 400px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+#level,
+#submit {
+  width: 100%;
+  padding: 10px 5px;
+  margin: 5px 1px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+#submit {
+  color: aliceblue;
+  background: rgb(31, 141, 21);
+  border :none;
+}
+
+#level:hover {
+  cursor: pointer;
+}
+#submit:hover,
+#reset:hover {
+  cursor: pointer;
+  opacity: 0,6;
+}
